@@ -1,0 +1,11 @@
+.header {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .07);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
