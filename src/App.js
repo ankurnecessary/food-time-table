@@ -1,11 +1,27 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './pages/Root';
-import './App.css';
+import HomePage from './pages/HomePage';
+import UserRegistration from './pages/UserRegistration';
+import SignIn from './pages/SignIn';
 
 const router = createBrowserRouter([
   {
-    path: ''
+    path: '/'
     , element: <Root />
+    , children: [
+      {
+        index: true
+        , element: <HomePage />
+      }
+      , {
+        path: 'user-registration'
+        , element: <UserRegistration />
+      }
+      , {
+        path: 'sign-in'
+        , element: <SignIn />
+      }
+    ]
   }
 ]);
 
