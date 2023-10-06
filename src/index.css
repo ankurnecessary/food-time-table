@@ -1,3 +1,8 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,15 +16,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 62.5%;
-  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
 }
 
 h1 {
-  font-size: 1em;
+  font-size: 1rem;
+}
+
+.page {
+  font-size: 1.5rem;
 }
 
 /* Utilities */
 .opacity-2 {
   opacity: .2;
+}
+
+.button-link {
+  border: 0;
+  background: none;
 }
