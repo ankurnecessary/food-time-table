@@ -6,7 +6,7 @@ import UserNavigation from './UserNavigation/UserNavigation';
 const MainNavigation = () => {
     return <header className={styles.header}>
         <div>
-            <h1><Link to="."><img src={logo} alt="" /></Link></h1>
+            <h1><Link to="." className={styles.logo}>Go to home page</Link></h1>
         </div>
         <div className={styles['header-right']}>
             <UserNavigation />

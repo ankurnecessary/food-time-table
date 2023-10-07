@@ -24,6 +24,7 @@ const UserNavigation = () => {
             className={`button-link ${styles['header__user-link']}`}
             aria-label="User"
             title='User'
+            type='button'
         >
             <FontAwesomeIcon icon={faUserCircle} size='3x' className='opacity-2' />
         </button>
