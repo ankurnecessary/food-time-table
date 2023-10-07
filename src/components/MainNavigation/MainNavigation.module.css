@@ -9,3 +9,11 @@
     justify-content: right;
     align-items: center;
 }
+
+.logo {
+    background-image: url('../../images/logo.png');
+    width: 6.3rem;
+    height: 5.7rem;
+    display: inline-block;
+    text-indent: -100rem;
+}
