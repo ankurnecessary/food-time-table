@@ -33,13 +33,45 @@ h1 {
 
 h2 {
   color: #0072e1;
-  padding-left: 1rem;
+  padding-bottom: 2rem;
 }
 
-hr {
-  margin-top: 1rem;
-  border: 1px solid #c3c1c1;
-  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .1);
+.form-group {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: inline-block;
+  padding-bottom: .5rem;
+}
+
+input {
+  width: 100%;
+  padding: .8rem;
+  border: 1px solid #cbcbcb;
+  border-radius: .5rem;
+}
+
+input:focus {
+  border: 1px solid #0072e1;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+  outline: none;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: transparent;
+  box-shadow: 0 0 .3rem rgba(0, 0, 0, .15);
+}
+
+.form-btn {
+  width: 100%;
+}
+
+button[type=submit] {
+  background-color: #fbdc2b;
 }
 
 /* Utilities */
@@ -50,4 +82,8 @@ hr {
 .button-link {
   border: 0;
   background: none;
+}
+
+.mb-small {
+  margin-bottom: 1rem;
 }
