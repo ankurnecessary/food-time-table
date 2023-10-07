@@ -29,6 +29,7 @@
     visibility: visible;
     opacity: 1;
     transition-delay: 0s;
+    border-radius: .5rem;
 }
 
 .header__user-dropdown-link {
