@@ -88,3 +88,7 @@ button[type=submit] {
 .mb-small {
   margin-bottom: 1rem;
 }
+
+.text-alert {
+  color: #ff0059
+}
