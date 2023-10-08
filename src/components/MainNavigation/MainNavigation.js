@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import logo from '../../images/logo.png';
 import styles from './MainNavigation.module.css';
 import UserNavigation from './UserNavigation/UserNavigation';
 
