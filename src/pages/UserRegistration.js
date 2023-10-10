@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 
 const UserRegistration = () => {
-    const { register, handleSubmit, reset, formState: { errors } } = useForm({ mode: 'onTouched' });
+    const { register, handleSubmit, reset, formState: { errors }, watch } = useForm({ mode: 'onTouched' });
     const onSubmit = data => {
         console.log(data);
         reset();
@@ -86,7 +86,18 @@ const UserRegistration = () => {
             </div>
             <div className="form-group">
                 <label htmlFor="confirm-password">Confirm Password <i className='text-alert'>*</i></label>
-                <input id='confirm-password' type="password" autoComplete="true" {...register("confirm-password")} />
+                <input id='confirm-password' type="password" autoComplete="true"
+                    {...register("confirm-password"
+                        , {
+                            required: "Confirm password is required"
+                            , validate: {
+                                matchPassword: (value) => {
+                                    if (watch('password') !== value) {
+                                        return "Confirm password doesn't match with password"
+                                    }
+                                }
+                            }
+                        },)} />
                 <p className='text-alert'>{errors['confirm-password']?.message}</p>
             </div>
             <button className="btn form-btn mb-small" type="submit">Register</button>
